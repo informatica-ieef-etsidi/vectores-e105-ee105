@@ -9,14 +9,6 @@ void main() {
 	int factorial[11];
 	int i, numero;
 
-	/*for (i = 0; i < 11; i++) {
-		printf("Introduce la componente %d: ", i + 1);
-		scanf_s("%d", &vector[i]);
-		printf("\n");
-		
-		}
-	} */
-
 	for (i = 0; i < 10; i++) {
 		if (i==0 || i==1)
 			factorial[i]=i;
