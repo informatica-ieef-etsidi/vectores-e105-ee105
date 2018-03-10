@@ -1,4 +1,5 @@
 //Programa que pide el valor de 20 datos de un vector y un numero cualquiera para comprobar si esta incluido
+//Por Ismael Gómez Pacheco
 #include <stdio.h>
 
 void main() {
