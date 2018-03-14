@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #define NFILAS 3
 #define NCOLS 2
@@ -25,8 +26,18 @@ void main() {
 				minimo = matriz[i][j];
 		}
 	}
+	
+	//Calcular maximo de una matriz
+	maximo = matriz[0][0];
+	for (i = 0; i < NFILAS; i++) {
+		for (j = 0; j < NCOLS; j++) {
+			if (matriz[i][j] > maximo)
+				maximo = matriz[i][j];
+		}
+	}
 
 	printf("Minimo: %d\n", minimo);
+	printf("Maximo: %d\n", maximo);
 	
 	system("PAUSE");
 }
