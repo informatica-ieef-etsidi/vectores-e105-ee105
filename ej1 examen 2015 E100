@@ -1,0 +1,36 @@
+//Angel Molina
+//Calcula la media de un vector y la desviacion
+
+#include<stdio.h>
+#include<math.h>
+#define TVECTOR 100
+
+void main() {
+	int n, i;
+	float media=0, d, vector[TVECTOR];
+
+	while (1) {
+		do {
+			printf("cuantos nuemros para obtener la media\n ");
+			scanf_s("%d", &n);
+		} while (n < 1);
+
+		for (i = 0; i < n; i++) {
+			printf("i=%d\t x=", i + 1);
+			scanf_s("%f", &vector[i]);
+			media = vector[i]+media;
+			printf("\n");
+		}
+		media = media / n;
+		printf("La media es:%.2f\n", media);
+
+		for (i = 0; i < n; i++) {
+			d = vector[i] - media;
+			printf("i=%d\t x=%f\t d=%.2f\n", i + 1, vector[i], d);
+		}
+		getchar();
+	}
+
+	
+	system("pause");
+}
